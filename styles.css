@@ -137,6 +137,11 @@ nav a:hover, nav a.active{
         border-bottom: 0.5rem solid #b74b4b;
     }
 
+    .Home{
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
 
 section{
