@@ -46,6 +46,26 @@ header{
     transition: 0.5s ease;
 }
 
+.menu-btn{
+    display: none;
+    background: transparent;
+    color: white;
+    font-size: 2.5rem;
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+    border: 0.2rem solid #b74b4b;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-btn:hover, .menu-btn.open{
+    color: #b74b4b;
+    border-color: #b74b4b;
+    background: rgba(183, 75, 75, 0.15);
+}
+
 .logo:hover{
     color: white;
     transform: scale(1.5);
@@ -66,6 +86,10 @@ nav a:hover, nav a.active{
 }
 
 @media(max-width:995px){
+    .menu-btn{
+        display: inline-flex;
+    }
+
     nav{
         position: absolute;
         display: none;
@@ -245,7 +269,7 @@ span{
         content: "Web Designer";
     }
     61%,80%{
-        content: "Freelancer";
+        content: "Frontend Designer";
     }
     81%,100%{
         content: "Frontend Developer";

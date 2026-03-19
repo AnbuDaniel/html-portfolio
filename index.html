@@ -13,6 +13,7 @@
     <header>
         <a href="#" class="logo">ANBU DANIEL J</a>
 
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
 
         <nav>
             <a href="#" class="active">Home</a>
@@ -46,6 +47,24 @@
 
 
     </section>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const nav = document.querySelector('header nav');
+        const navLinks = document.querySelectorAll('header nav a');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuBtn.classList.toggle('open');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                menuBtn.classList.remove('open');
+            });
+        });
+    </script>
 
 </body>
 </html>
