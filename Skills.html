@@ -32,21 +32,55 @@
         font-size: 4rem;
         font-weight: 600;
         text-align: center;
+        text-decoration: underline;
     }
     .content{
         width: 80%;
         margin: auto;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .content:hover{
-        color: white;
+        color: rgb(214, 228, 16);
         transform: scale(1.05);
     }
 
     .header:hover {
-        color: white;
+        color: rgb(214, 228, 16);
         transform: scale(1.05);
+    }
+
+    .certificate{
+        font-size: 4rem;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: underline;
+    }
+     .certificate:hover {
+        color: rgb(214, 228, 16);
+        transform: scale(1.05);
+    }
+     ul{
+        list-style-type: square;
+        padding-left: 20px;
+    }
+     li{
+        margin-bottom: 10px;
+    }
+     @media (max-width: 768px) {
+        html {
+            font-size: 50%;
+        }
+    }
+     @media (max-width: 480px) {
+        html {
+            font-size: 40%;
+        }
+    }
+     @media (max-width: 320px) {
+        html {
+            font-size: 30%;
+        }
     }
     
     </style>
@@ -63,6 +97,10 @@
             <li> Web Design: Responsive Design, UI Layouts</li>
             <li> Other Skills: Problem Solving, Communication, Team Collaboration</li>
         </ul>
+    </div>
+     <div>
+        <h1 class="certificate">CERTIFICATES</h1>
+        <img src="./assets/Certificate.jpg" alt="Certificate" style="display: block; margin: 20px auto; width: 50%; border: 2px solid #b74b4b; border-radius: 10px;">
     </div>
     
 </body>
